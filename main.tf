@@ -117,7 +117,6 @@ resource "aws_cloudwatch_event_target" "lambda-func-stop" {
   depends_on = [aws_cloudwatch_event_rule.ec2-rule-stop]
     
 }
-
 resource "aws_lambda_permission" "allow_cloudwatch-stop" {
   statement_id  = "AllowExecutionFromCloudWatch"
   action        = "lambda:InvokeFunction"
