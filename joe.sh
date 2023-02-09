@@ -2,7 +2,7 @@
 
 #adding 2 numbers
 
-a=10
+a=15
 b=20
  
 sum=$(( $a + $b ))
